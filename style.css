@@ -238,27 +238,27 @@ header > nav {
 }
 
 .parallax .campaigns {
-	background-image: url('/images/campaigns.png');
+	background-image: url('./images/campaigns.png');
 }
 
 .parallax .dry-aged {
-	background-image: url('/images/dry-aged.jpg');
+	background-image: url('./images/dry-aged.jpg');
 }
 
 .parallax .steak {
-	background-image: url('/images/steak.jpg');
+	background-image: url('./images/steak.jpg');
 }
 
 .parallax .burger {
-	background-image: url('/images/burger.jpg');
+	background-image: url('./images/burger.jpg');
 }
 
 .parallax .lamb {
-	background-image: url('/images/lamb.webp');
+	background-image: url('./images/lamb.webp');
 }
 
 .parallax .meatball {
-	background-image: url('/images/meatball.jpeg');
+	background-image: url('./images/meatball.jpeg');
 }
 
 .scroller {
