@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Rooftop Steakhouse Menu</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul class="bottomNav" id="menu">
+					<li><a href="#campaigns">Campaigns</a></li>
+					<li><a href="#dry-aged">Dry Aged</a></li>
+					<li><a href="#steak">Steak</a></li>
+					<li><a href="#burger">Burger</a></li>
+					<li><a href="#lamb">Lamb</a></li>
+					<li><a href="#meatball">Meatball</a></li>
+				</ul>
+				<a
+					href="javascript:void(0);"
+					class="mobile-icon active"
+					onclick="mobileMenu()"
+				>
+					<i class="fa fa-bars"></i>
+				</a>
+				<a
+					href="javascript:void(0);"
+					class="mobile-close-icon"
+					onclick="mobileMenu()"
+				>
+					<i class="fa fa-close"></i>
+				</a>
+			</nav>
+			<div class="logo">
+				<img src="images/logo.svg" alt="logo" />
+			</div>
+		</header>
+
+		<div class="parallax">
+			<section class="campaigns scroller" id="campaigns">
+				<h1>Campaigns</h1>
+			</section>
+		</div>
+
+		<div class="parallax">
+			<section class="dry-aged scroller" id="dry-aged">
+				<h1>Dry Aged</h1>
+			</section>
+		</div>
+
+		<div class="parallax">
+			<section class="steak scroller" id="steak">
+				<h1>Steak</h1>
+			</section>
+		</div>
+
+		<div class="parallax">
+			<section class="burger scroller" id="burger">
+				<h1>Burger</h1>
+			</section>
+		</div>
+
+		<div class="parallax">
+			<section class="lamb scroller" id="lamb">
+				<h1>Lamb</h1>
+			</section>
+		</div>
+
+		<div class="parallax">
+			<section class="meatball scroller" id="meatball">
+				<h1>Meatball</h1>
+			</section>
+		</div>
+
+		<script src="menu.js"></script>
+	</body>
+</html>
