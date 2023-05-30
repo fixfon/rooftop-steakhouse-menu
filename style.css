@@ -266,3 +266,55 @@ header > nav {
 	height: 100%;
 	width: 100%;
 }
+
+.column {
+	float: left;
+	width: 25%;
+	padding: 0 10px 20px;
+}
+
+.row {
+	margin: 20px 20px;
+}
+
+.row:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+	padding: 16px;
+	text-align: center;
+	background-color: #f1f1f1;
+	border-radius: var(--border-radius);
+
+	> h3 {
+		font-size: var(--font-size-heading);
+		font-weight: var(--font-weight-extra-bold);
+		color: var(--primary-color);
+	}
+
+	> img {
+		margin: 0 auto;
+		border-radius: 8px;
+		width: 80%;
+		height: 150px;
+		object-fit: cover;
+	}
+}
+
+.card > .weight {
+	text-align: right;
+	font-size: var(--font-size-large);
+	font-weight: var(--font-weight-bold);
+}
+
+@media screen and (max-width: 1024px) {
+	.column {
+		width: 100%;
+		display: block;
+		margin-bottom: 20px;
+	}
+}
