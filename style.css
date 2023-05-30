@@ -351,6 +351,14 @@ table > thead > tr > th {
 	font-weight: var(--font-weight-bold);
 	padding: 8px;
 	border-radius: 8px;
+
+	> img {
+		width: 30px;
+		height: 30px;
+		object-fit: cover;
+		margin: auto;
+
+	}
 }
 
 table > tbody > tr > td {
