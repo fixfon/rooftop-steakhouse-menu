@@ -339,9 +339,8 @@ header > nav {
 
 .container {
 	padding: 0 20px;
-	margin: auto;
+	height: 100vh;
 	display: flex;
-	height: 100%;
 	align-items: center;
 	justify-content: center;
 }
@@ -410,7 +409,6 @@ table > tbody > tr:hover {
 	text-align: center;
 	font-size: var(--font-size-large);
 	font-weight: var(--font-weight-bold);
-	/* counter-increment: carousel-cell; */
 
 	> img {
 		width: 100%;
@@ -421,22 +419,107 @@ table > tbody > tr:hover {
 	}
 }
 
-/* .carousel-cell.is-selected {
-	background: #ed2;
-} */
-
 @media screen and (max-width: 1024px) {
 	.carousel-cell {
 		width: 100%;
 	}
 }
 
-/* cell number */
-/* .carousel-cell:before {
-	display: block;
+.interior {
+	padding: 16px;
+	border-radius: var(--border-radius);
+	margin-left: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	bottom: 110px;
+	background-color: var(--background-color);
+	font-weight: var(--font-weight-bold);
+	color: var(--primary-color);
+	transition: color 0.3s, scale 0.3s;
+}
+
+.interior:hover {
+	cursor: pointer;
+	scale: 1.1;
+}
+
+.modal-window {
+	position: fixed;
+	background-color: rgba(255, 255, 255, 0.25);
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 999;
+	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.3s;
+}
+
+.modal-window:target {
+	visibility: visible;
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.modal-window > div {
+	border-radius: var(--border-radius);
+	width: 400px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 2em;
+	background: var(--background-color);
+	color: var(--primary-color);
+	font-weight: var(--font-weight-medium);
+}
+
+.modal-window h1 {
+	font-size: 150%;
+	margin: 0 0 15px;
+	font-weight: var(--font-weight-bold);
+}
+
+.modal-window form {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+
+	> textarea {
+		border-radius: var(--border-radius);
+		resize: none;
+	}
+
+	> input[type='submit'] {
+		cursor: pointer;
+		border-radius: var(--border-radius);
+		background-color: var(--primary-color);
+		color: var(--background-color);
+		font-weight: var(--font-weight-bold);
+		transition: scale 0.3s;
+	
+		&:hover {
+			scale: 1.1;
+		}
+	}
+}
+
+.modal-close {
+	color: var(--primary-color);
+	line-height: 50px;
+	font-size: 24px;
+	position: absolute;
+	right: 0;
 	text-align: center;
-	content: counter(carousel-cell);
-	line-height: 200px;
-	font-size: 80px;
-	color: white;
-} */
+	top: 0;
+	width: 70px;
+	text-decoration: none;
+}
+.modal-close:hover {
+	color: black;
+}

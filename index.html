@@ -16,6 +16,60 @@
 		/>
 	</head>
 	<body>
+		<div class="modal">
+			<div class="interior">
+				<a class="btn" href="#open-modal">Rate Our Restaurant</a>
+			</div>
+			<div id="open-modal" class="modal-window">
+				<div>
+					<a href="#" title="Close" class="modal-close">&#x2716;</a>
+					<h1>Rate Our Restaurant</h1>
+
+					<form action="">
+						<label for="rating">Rating:</label>
+						<select id="rating" name="rating" required>
+							<option value="">-- Select Rating --</option>
+							<option value="5">5 - Excellent</option>
+							<option value="4">4 - Very Good</option>
+							<option value="3">3 - Good</option>
+							<option value="2">2 - Fair</option>
+							<option value="1">1 - Poor</option>
+						</select>
+
+						<label for="food_quality">Food Quality:</label>
+						<select id="food_quality" name="food_quality" required>
+							<option value="">-- Select Food Quality --</option>
+							<option value="5">5 - Excellent</option>
+							<option value="4">4 - Very Good</option>
+							<option value="3">3 - Good</option>
+							<option value="2">2 - Fair</option>
+							<option value="1">1 - Poor</option>
+						</select>
+
+						<label for="service">Service:</label>
+						<select id="service" name="service" required>
+							<option value="">-- Select Service --</option>
+							<option value="5">5 - Excellent</option>
+							<option value="4">4 - Very Good</option>
+							<option value="3">3 - Good</option>
+							<option value="2">2 - Fair</option>
+							<option value="1">1 - Poor</option>
+						</select>
+
+						<label for="comments">Comments:</label>
+						<textarea
+							id="comments"
+							name="comments"
+							rows="4"
+							cols="30"
+						></textarea>
+
+						<input type="submit" value="Submit" />
+					</form>
+				</div>
+			</div>
+		</div>
+
 		<header>
 			<nav>
 				<ul class="bottomNav" id="menu">
