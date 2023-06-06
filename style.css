@@ -386,7 +386,8 @@ table > tbody > tr:hover {
 	background-color: #ddd;
 }
 
-.burger {
+.burger,
+.campaigns {
 	display: flex;
 	flex-direction: column;
 }
@@ -395,32 +396,65 @@ table > tbody > tr:hover {
 	border-radius: var(--border-radius);
 	margin: auto auto;
 	background: rgba(0, 0, 0, 0.6);
-	height: 300px;
 	width: 90%;
 }
 
 .carousel-cell {
-	width: 28%;
-	height: 300px;
 	margin-right: 10px;
 	background: var(--background-color);
 	border-radius: 5px;
 	color: var(--primary-color);
 	text-align: center;
-	font-size: var(--font-size-large);
 	font-weight: var(--font-weight-bold);
+	border-radius: var(--border-radius);
 
 	> img {
 		width: 100%;
-		height: 80%;
 		object-fit: cover;
 		border-radius: 5px;
 		border-radius: var(--border-radius);
 	}
 }
 
+.burger .carousel {
+	height: 300px;
+}
+
+.burger .carousel-cell {
+	height: 300px;
+	width: 28%;
+	font-size: var(--font-size-large);
+
+	> img {
+		height: 80%;
+	}
+}
+
+.campaigns .carousel {
+	height: 640px;
+}
+
+.campaigns .carousel-cell {
+	height: 640px;
+	width: 72%;
+	font-size: var(--font-size-extra-large);
+
+	> img {
+		height: 100%;
+	}
+}
+
 @media screen and (max-width: 1024px) {
-	.carousel-cell {
+	.campaigns .carousel {
+		height: 350px;
+	}
+
+	.campaigns .carousel-cell {
+		width: 100%;
+		height: 350px;
+	}
+
+	.burger .carousel-cell {
 		width: 100%;
 	}
 }
@@ -502,7 +536,7 @@ table > tbody > tr:hover {
 		color: var(--background-color);
 		font-weight: var(--font-weight-bold);
 		transition: scale 0.3s;
-	
+
 		&:hover {
 			scale: 1.1;
 		}
