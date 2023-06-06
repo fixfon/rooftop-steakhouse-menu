@@ -10,6 +10,10 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+		/>
 	</head>
 	<body>
 		<header>
@@ -244,6 +248,45 @@
 		<div class="parallax">
 			<section class="burger scroller" id="burger">
 				<h1>Burger</h1>
+
+				<div class="carousel" data-flickity='{ "groupCells": true }'>
+					<div class="carousel-cell">
+						<img src="./images/rooftop-burger.jpg" alt="rooftop burger" />
+						<h3>Rooftop Burger</h3>
+						<p>170TL</p>
+					</div>
+					<div class="carousel-cell">
+						<img src="./images/lokum-burger.webp" alt="lokum burger" />
+						<h3>Lokum Burger</h3>
+						<p>200TL</p>
+					</div>
+					<div class="carousel-cell">
+						<img
+							src="./images/special-extreme-burger.jpg"
+							alt="special-extreme-burger"
+						/>
+						<h3>Special Extreme Burger</h3>
+						<p>160TL</p>
+					</div>
+					<div class="carousel-cell">
+						<img src="./images/chicken-burger.jpg" alt="chicken burger" />
+						<h3>Chicken Burger</h3>
+						<p>130TL</p>
+					</div>
+					<div class="carousel-cell">
+						<img src="./images/bbq-burger.jpg" alt="bbq burger" />
+						<h3>BBQ Burger</h3>
+						<p>140TL</p>
+					</div>
+					<div class="carousel-cell">
+						<img
+							src="./images/mac-and-cheese-burger.png"
+							alt="mac and cheese burger"
+						/>
+						<h3>Mac and Cheese Burger</h3>
+						<p>150TL</p>
+					</div>
+				</div>
 			</section>
 		</div>
 
@@ -260,5 +303,6 @@
 		</div>
 
 		<script src="menu.js"></script>
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 	</body>
 </html>
